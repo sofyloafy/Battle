@@ -10,13 +10,12 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
-  p params[:name]
+post '/named-cat' do
   @name = params[:name]
   erb(:index)
 end
 
-post '/string' do
+get '/cat_form' do
   erb(:form)
 end
 
@@ -30,5 +29,3 @@ get '/houses' do
   <img src=https://davidburr.co.uk/wp-content/uploads/2018/11/Victorian-Properties-1050x550.jpg>
   </div>"
 end
-
-
