@@ -16,6 +16,10 @@ get '/named-cat' do
   erb(:index)
 end
 
+post '/string' do
+  erb(:form)
+end
+
 
 get '/secret' do
   'this is secret'
